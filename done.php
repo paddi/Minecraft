@@ -7,17 +7,35 @@ if($_POST['username'] && $_POST['code'] == null)
 else 
 {
 	$code = $_POST['code'];
+	$username = $_POST['username'];
 	mysql_connect("localhost", "root", "parker");
 	mysql_select_db("minecraftrcon");
 	$query = "SELECT * FROM codes WHERE code=$code";
 	$result = mysql_query($query);
 	
 	if(mysql_num_rows($result)) {
-		echo "The code you have registered under has been used, sorry :(";
+		
+		while($row = mysql_fetch_array($result))
+		{
+			if($row['registered'] == "1")
+			{
+				echo "<strong>".$code."</strong> has already been regisited";
+			}
+			else 
+			{
+
+				$data = ''.$username.''.PHP_EOL;
+				$fp = fopen('server/white-list.txt', 'a');
+				fwrite($fp, $data);
+				echo "<center>Congratulations, you have successfull registered under the username <strong>".$username."</strong> Using the code <strong>".$code."</strong>";
+				$updatequery = "UPDATE codes SET username = $username, registered = '1' WHERE code = $code";
+				$resultquery = mysql_query($updatequery);
+			}
+		}
 	}
 	else
 	{
-		echo "0";
+		echo "The code <strong>".$code."</strong> does not exist";
 	}
 }
 

@@ -6,8 +6,7 @@
 		<style>
 			BODY{
 				margin: 0 auto;
-				background-color: black;
-				color: white;
+				color: black;
 				font-family: Arial;
 			}
 			.container{
@@ -19,9 +18,12 @@
 			}
 		</style>
 		<div class="container">
+			<img src="logo.jpg">
 			<form action="done.php" method="POST">
-				 minecraft username: <input type="text" name="username"><br>
-				 Registration code:  <input type="text" name="code">
+				 minecraft username:<br>
+				  <input type="text" name="username"><br>
+				 Registration code:  <br>
+				 <input type="text" name="code"><br>
 				 <input type="submit">
 			 </form>
 		</div>
