@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Crafity</title>
+		<meta charset="UTF-8">
 	</head>
 	<body>
 		<style>
@@ -25,6 +26,7 @@
 				 Registration code:  <br>
 				 <input type="text" name="code"><br>
 				 <input type="submit">
+				 <p>NOTE: ►Username is your in-game minecraft name, not email address.. make sure this is correct if not you'll not be able to connect.</p>
 			 </form>
 		</div>
 	</body>
