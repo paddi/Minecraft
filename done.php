@@ -18,7 +18,7 @@ else
 		while($row = mysql_fetch_array($result))
 		{
 			if($row['registered'] == "1")
-			{
+			{https://www.facebook.com/#
 				echo "<strong>".$code."</strong> has already been regisited";
 			}
 			else 
@@ -28,7 +28,9 @@ else
 				$fp = fopen('server/white-list.txt', 'a');
 				fwrite($fp, $data);
 				echo "<center>Congratulations, you have successfull registered under the username <strong>".$username."</strong> Using the code <strong>".$code."</strong>";
-				$updatequery = "UPDATE codes SET username = $username, registered = '1' WHERE code = $code";
+				mysql_connect("localhost", "root", "parker");
+				mysql_select_db("minecraftrcon");
+				$updatequery = "UPDATE codes SET username='$username', registered = '1' WHERE code = '$code'";
 				$resultquery = mysql_query($updatequery);
 			}
 		}
