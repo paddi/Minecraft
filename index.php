@@ -1,33 +1,34 @@
 <html>
 	<head>
 		<title>Crafity</title>
-		<meta charset="UTF-8">
-	</head>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		</head>
 	<body>
-		<style>
-			BODY{
-				margin: 0 auto;
-				color: black;
-				font-family: Arial;
-			}
-			.container{
-				margin: 0 auto;
-				height: 500px;
-				width: 500px;
-				padding-top:25px;
-				text-align: center;
-			}
-		</style>
-		<div class="container">
-			<img src="logo.jpg">
-			<form action="done.php" method="POST">
-				 minecraft username:<br>
-				  <input type="text" name="username"><br>
-				 Registration code:  <br>
-				 <input type="text" name="code"><br>
-				 <input type="submit">
-				 <p>NOTE: ►Username is your in-game minecraft name, not email address.. make sure this is correct if not you'll not be able to connect.</p>
-			 </form>
+		<div id="background">
+			<img src="images/background.jpg">
+		</div>		
+		<div class="header">
+				<center><img src="images/MAIN2.png"></center>
+		</div>
+		<div class="main_content">
+			<center><ol class="breadcrumb ">
+			  <li class="active"><a href="#">Home</a></li>
+			  <li><a href="reg.php">Register</a></li>
+			  <li><a href="#">Bans</a></li>
+			  <li><a href="#">community</a></li>
+			</ol></center>
+			
+			<div class="news">
+				<div class="avatext">
+					<img src="images/ava.png">
+					<p>Paddy</p>
+				</div>
+				<div class="newstext">
+				<iframe width="560" height="315" src="//www.youtube.com/embed/FaMTedT6P0I" frameborder="0" allowfullscreen></iframe>
+
+			</div>
 		</div>
 	</body>
 </html>

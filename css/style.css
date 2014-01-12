@@ -1,0 +1,61 @@
+body{
+	padding: 25px;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.main_content
+{
+	
+	margin: 0 auto;
+	height: 500px;;
+	width: 800px;;
+	background-color: white;
+	border: 0px;
+	border-radius: 15px;
+	background-color: #f8f8f8;
+	margin-top:25px;
+}
+.header img
+{
+	margin: 0 auto;
+}
+
+.news
+{
+	padding: 10px;
+	width: 700px;
+	height:500px;
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+
+.avatext
+{
+	font-size: 12px;
+	padding-right: 15px;
+	float:left;
+	text-align: center;
+	height: 89px;
+	
+}
+.newstext
+{
+	color: #00b4d8;
+	font-size: 12px;
+}
+.formreg
+{
+	margin: 0 auto;
+	
+}
