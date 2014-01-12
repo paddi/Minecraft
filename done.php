@@ -77,7 +77,7 @@
 					}
 					else 
 					{
-						echo "<center><span class='label label-danger'>Error[001]:</span> A crucial file is missing";
+						echo "<center><span class='label label-danger'>Error[001]:</span> A crucial file is missing</center>";
 					}
 				}
 
